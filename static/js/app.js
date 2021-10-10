@@ -70,6 +70,21 @@ function buildPlot(id) {
         Object.entries(metadata).forEach(([key, value])=> {
             info.append("h5").html(`<b>${key}</b> ${value}`);
         })
+
+        var trace3 = [
+            {
+                domain: {x: [0,1], y: [0,1]},
+                value: metadata.wfreq,
+                title: {text: "Belly Button Washing Frequency"},
+                type: "indicator",
+                mode: "gauge+number",
+                gauge: {
+                    axis: {range: [0,9]},
+                }
+            }
+        ];
+        var layout = {width: 600, height: 500, margin: {t:0, b:0}};
+        Plotly.newPlot("gauge", trace3, layout);
     })
 };
 
