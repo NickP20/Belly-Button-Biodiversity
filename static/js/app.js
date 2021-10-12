@@ -28,7 +28,7 @@ function buildPlot(id) {
 
         var data1 =[trace1];
         var layout1 = {
-            title: "Top 10 OTUs",
+            title: "Top 10 Bacteria Cultures Found",
             margin: {
                 l: 100,
                 r: 100, 
@@ -53,7 +53,7 @@ function buildPlot(id) {
 
         var data2 =[trace2];
         var layout2 = {
-            title: "Top 10 OTUs",
+            title: "Bacteria Cultures Per Sample",
             margin: {
                 l: 100,
                 r: 100, 
